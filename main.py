@@ -6,9 +6,9 @@ import google.generativeai as genai
 
 load_dotenv()  # charge les variables d'environnement depuis le fichier .env
 
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))# pour que le SDK de Google puisse communiquer avec l’API Gemini
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-1.5-flash") # Initialisation de l'IA Gemini 1.5 Flash
 
 app = FastAPI()
 
